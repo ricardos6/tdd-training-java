@@ -5,22 +5,34 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class FizzBuzzTest {
 
+	// TDD METHODOLOGY INSTRUCTIONS
+
+	// 1. CREATE A TEST FOR A USE CASE, WITH NO IMPLEMENTATION
+	// 2. RUN THE TEST -> IT FAILS
+	// 3. WRITE THE *MINIMUM* CODE TO PASS THE TEST
+	// 4. RUN THE TEST -> IT PASS
+	// 5. GOT TO 1
+
 	@Test
 	public void should_return_1_when_input_is_1() {
+
 		String ret = FizzBuzz.execute(1);
 
 		assertEquals("1", ret);
 	}
 
+
 	@Test
 	public void should_return_input_when_not_multiple() {
+
 		String ret = FizzBuzz.execute(2);
 
 		assertEquals(ret, "2");
 	}
 
-	/*@Test
+	@Test
 	public void should_return_Fizz_when_input_is_multiple_of_3() {
+
 		String ret = FizzBuzz.execute(6);
 		assertEquals(ret, "Fizz");
 
@@ -34,8 +46,10 @@ public class FizzBuzzTest {
 		assertEquals(ret, "Fizz");
 	}
 
+
 	@Test
 	public void should_return_Buzz_when_input_is_multiple_of_5() {
+
 		String ret = FizzBuzz.execute(5);
 		assertEquals(ret, "Buzz");
 
@@ -46,8 +60,10 @@ public class FizzBuzzTest {
 		assertEquals(ret, "Buzz");
 	}
 
+
 	@Test
 	public void should_return_Buzz_when_input_is_multiple_of_15() {
+
 		String ret = FizzBuzz.execute(15);
 		assertEquals(ret, "FizzBuzz");
 
@@ -56,5 +72,5 @@ public class FizzBuzzTest {
 
 		ret = FizzBuzz.execute(60);
 		assertEquals(ret, "FizzBuzz");
-	}*/
+	}
 }
