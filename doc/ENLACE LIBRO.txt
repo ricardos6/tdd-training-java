@@ -1,0 +1,3 @@
+Test Driven Development: By Example
+by Kent Beck
+	-> https://www.oreilly.com/library/view/test-driven-development/0321146530/
